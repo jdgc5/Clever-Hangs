@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanged Game</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body id="">
+    <header>
+    <!--<div id="upperHeader">
+            <img id="logo" src="/img/logo.png" alt="logo"></img>
+            <nav id="nav" class="p1 w80">
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>-->
+    </header>
+    <main class="bc-2 p1bot backImg">
+        <!-- <section class="">
+            <img id="mainImg" class="w100" src="/img/main.jpg" alt="imgExample">
+        </section> --> 
+        <h1 id="title">Clever Hangs</h1>
+        <div id="full-content" class="">
+                <div class="flexCol ta m1left">
+                    <div id="difficultyDiv" class="p1 m2bot">
+                        <h4 class="m1bot m1right"></h4>
+                        <select class="button m1bot" id="difficulty" name="options">
+                            <option id="easy" value="easy">Easy</option>
+                            <option id="normal" value="normal">Normal</option>
+                            <option id="hard" value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="p1 m2bot" id="exitDisplay">
+                        <h4 class="m1right m1bot"></h4>
+                        <button class="button m1bot" id="exit">Exit</button>
+                    </div>
+                    <div class="p1">
+                        <h4 class="m1right m1bot"></h4>
+                        <button class="button m1bot" id="play">New Game</button>
+                    </div>
+                    
+                </div>
+            
+            <div class="centerRight">
+                <div id="center" class="flexCol w100">
+                    <div>
+                        <h2 id="word-message" class="word-messageStyle">Click New Game To Start</h2>
+                    </div>
+                    <div class="word-display infoButtons" >
+                        <p id="word-display" class="m1bot"></p>
+                    </div>
+                    <div class="flexCol w20">
+                        <input type="text" id="word" class="buttonText m1bot infoButtons"></input>
+                        <button id="tryWord" class="button m3bot m4top">Try Letter</button>
+                    </div>
+                </div>
+                <div id="right" class="flexCol w20 ta m4rightta">
+                    <div class="p1 infoButtons">
+                        <h4 class="m1bot">Current Level</h4>
+                        <h4 id="currentLevel" class="m1bot">0</h4>
+                    </div>
+                    <div class="p1 infoButtons">
+                        <h4 class="m1bot">Current Life</h4>
+                        <h4 id="currentLife" class="m1bot">0</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bc-foo p1">
+        <p>&copy;2023 Clever Hands - All the right reserved</p>
+    </footer>
+
+
+    <script type="module" src="modules/levels.js"></script>
+    <script type="module" src="modules/words.js"></script>
+    <script type="module" src="modules/player.js"></script>
+    <script type="module" src="modules/game.js"></script>
+    <script type="module" src="modules/script.js"></script>
+</body>
+</html>
